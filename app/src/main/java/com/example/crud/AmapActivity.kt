@@ -21,11 +21,10 @@ class AmapActivity : Activity() {
         if(aMap == null){
             aMap = map.map
         }
-        var myLocationStyle = MyLocationStyle()
+       var myLocationStyle = MyLocationStyle()
         myLocationStyle.interval(2000)
         aMap!!.setMyLocationStyle(myLocationStyle)
         aMap.isMyLocationEnabled = true
-
 
 
     }
