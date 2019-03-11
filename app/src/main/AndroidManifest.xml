@@ -22,6 +22,14 @@
                 <action android:name="android.intent.action.EDIT"></action>
             </intent-filter>
         </activity>
+        
+        <activity android:name=".AmapActivity">
+
+        </activity>
+        
+        <meta-data
+                android:name="com.amap.api.v2.apikey"
+                android:value="6682a26f075939907135497718a41940"/>
     </application>
 
 </manifest>

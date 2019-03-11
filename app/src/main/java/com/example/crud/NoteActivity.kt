@@ -1,6 +1,7 @@
 package com.example.crud
 
 import android.content.ContentValues
+import android.content.Intent
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.support.v7.app.AppCompatActivity
@@ -14,6 +15,11 @@ class NoteActivity:AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_note)
+
+        showMap.setOnClickListener{
+
+            startActivity(Intent(this,AmapActivity::class.java))
+        }
 
         try {
             var bundle:Bundle = intent.extras
