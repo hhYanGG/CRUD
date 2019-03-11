@@ -21,6 +21,11 @@
 
         </activity>
 
+        <activity android:name=".PushSetMain">
+
+        </activity>
+
+
         <activity android:name=".NoteActivity">
             <intent-filter>
                 <action android:name="android.intent.action.EDIT"></action>

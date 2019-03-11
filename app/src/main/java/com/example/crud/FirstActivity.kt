@@ -18,6 +18,9 @@ class FirstActivity : AppCompatActivity() {
 
             startActivity(Intent(this,AmapActivity::class.java))
         }
+        push_config.setOnClickListener{
+            startActivity(Intent(this,PushSetMain::class.java))
+        }
     }
 
 }
