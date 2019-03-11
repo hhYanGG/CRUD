@@ -11,6 +11,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import kotlinx.android.synthetic.main.activity_main.*
+import cn.jpush.android.api.JPushInterface
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,6 +25,8 @@ class MainActivity : AppCompatActivity() {
         lvNotes.onItemClickListener = AdapterView.OnItemClickListener{adapterView, view,position,id ->
             Toast.makeText(this,"Click on " + listNotes[position].title,Toast.LENGTH_SHORT).show()
         }
+        JPushInterface.setDebugMode(true)
+        JPushInterface.init(this)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
