@@ -16,11 +16,6 @@ class NoteActivity:AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_note)
 
-        showMap.setOnClickListener{
-
-            startActivity(Intent(this,AmapActivity::class.java))
-        }
-
         try {
             var bundle:Bundle = intent.extras
             id = bundle.getInt("MainActId",0)

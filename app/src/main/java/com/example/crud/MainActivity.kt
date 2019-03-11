@@ -1,5 +1,6 @@
 package com.example.crud
 
+import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
@@ -13,7 +14,7 @@ import android.widget.*
 import kotlinx.android.synthetic.main.activity_main.*
 import cn.jpush.android.api.JPushInterface
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : Activity() {
 
     private var listNotes = ArrayList<Note>()
 
@@ -25,6 +26,11 @@ class MainActivity : AppCompatActivity() {
         lvNotes.onItemClickListener = AdapterView.OnItemClickListener{adapterView, view,position,id ->
             Toast.makeText(this,"Click on " + listNotes[position].title,Toast.LENGTH_SHORT).show()
         }
+
+        add.setOnClickListener{
+            startActivity(Intent(this,NoteActivity::class.java))
+        }
+
         JPushInterface.setDebugMode(true)
         JPushInterface.init(this)
     }
