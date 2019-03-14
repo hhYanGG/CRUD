@@ -13,6 +13,7 @@ import android.view.ViewGroup
 import android.widget.*
 import kotlinx.android.synthetic.main.activity_main.*
 import cn.jpush.android.api.JPushInterface
+import kotlinx.android.synthetic.main.activity_first.*
 
 class MainActivity : Activity() {
 
@@ -33,6 +34,10 @@ class MainActivity : Activity() {
 
         JPushInterface.setDebugMode(true)
         JPushInterface.init(this)
+        toolbar.setNavigationIcon(R.drawable.abc_btn_check_material)
+        toolbar.setNavigationOnClickListener {
+            finish()
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

@@ -12,6 +12,7 @@ import android.text.format.Time
 import android.util.Log
 import android.widget.Toolbar
 import kotlinx.android.synthetic.main.activity_first.*
+import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 import kotlin.math.log
 
@@ -31,7 +32,7 @@ class FirstActivity : AppCompatActivity() {
             startActivity(Intent(this,PushSetMain::class.java))
         }
 
-        setSupportActionBar(my_toolbar)
+
 
     }
 
