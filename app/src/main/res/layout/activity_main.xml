@@ -4,20 +4,12 @@
               android:layout_height="match_parent"
               android:orientation="vertical">
 
-
-    <android.support.v7.widget.Toolbar
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorAccent"
-            android:theme="?attr/actionBarTheme"
-            android:minHeight="?attr/actionBarSize" android:id="@+id/toolbar"
-            />
     <ListView
             android:id="@+id/lvNotes"
             android:layout_width="match_parent"
-            android:layout_height="500dp"/>
+            android:layout_height="589dp"/>
     <Button
             android:text="add"
             android:layout_width="match_parent"
-            android:layout_height="61dp" android:id="@+id/add"/>
+            android:layout_height="wrap_content" android:id="@+id/add"/>
 </LinearLayout>
