@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/bottom1"
+        android:icon="@color/design_default_color_primary_dark"
+        android:title="list"></item>
+
+    <item
+        android:id="@+id/bottom2"
+        android:icon="@mipmap/ic_launcher"
+        android:title="setting"></item>
+    <item
+        android:id="@+id/bottom3"
+        android:icon="@color/colorAccent"
+        android:title="map"></item>
+</menu>
